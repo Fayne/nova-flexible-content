@@ -37,7 +37,7 @@
 
           <p class="text-80 grow px-4">
             <span class="mr-3 font-semibold">#{{ index + 1 }}</span>
-            {{ group.title }}
+            <span v-html="title"></span>
           </p>
 
           <div class="flex" v-if="!readonly">
@@ -180,6 +180,10 @@ export default {
 
       return classes;
     },
+
+    title() {
+      return this.group.attributes?.popover || this.group.title;
+    }
   },
 
   methods: {

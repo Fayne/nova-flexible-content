@@ -694,6 +694,7 @@ class Layout implements LayoutInterface, JsonSerializable, ArrayAccess, Arrayabl
             'title' => $this->title,
             'fields' => $this->fields->jsonSerialize(),
             'limit' => $this->limit,
+            'attributes' => $this->attributes,
         ];
     }
 

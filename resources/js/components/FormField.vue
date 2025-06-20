@@ -237,6 +237,7 @@ export default {
           this.currentField,
           key,
           collapsed,
+          layout.attributes,
         );
 
       this.groups[group.key] = group;
